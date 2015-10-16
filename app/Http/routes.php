@@ -11,6 +11,10 @@
 |
 */
 
+/* Route:: get('what url prefix', function(){
+	return view('What view file or output');
+})*/
+/* Example of view file (news.list)*/
 Route::get('/', function () {
     return view('welcome');
 });
@@ -52,3 +56,14 @@ Route::group(['prefix'=>'admin'],function(){
 
 //Routing to controller
 Route::get('/news','NewsController@index');
+
+/*Using a master blade template
+1. Create a master blade template under views/layouts
+2. Create a controller for layout under app/Http/Controllers
+3. Route to the controller
+4. Add class in the controller for the child layout 
+5. Create a child layout that uses the master under /view
+6. Refer to child.blade
+*/
+Route::get('/blade','MasterLayout@index');
+Route::get('/employee','Employee@show');
