@@ -1,6 +1,7 @@
 ##To-Do List
-*The Route folder handles all page redirects from URL.
-*Controller is in the app/Http/ folder that handles taking Views from the resource/views/
+The Route folder handles all page redirects from URL.
+
+Controller is in the app/Http/ folder that handles taking Views from the resource/views/
 
 
 ## Laravel PHP Framework
