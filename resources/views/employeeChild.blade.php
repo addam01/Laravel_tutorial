@@ -1,5 +1,9 @@
-@extends('layouts.masterEmployee')
+@extends('layouts.masterBody')
 @section('title','Employee')
+@endsection
 
-@section('body')
+@section('navbar')
+@endsection
+
+@section('js')
 @endsection

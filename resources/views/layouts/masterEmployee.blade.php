@@ -20,6 +20,7 @@
 	<link href="{{asset('color/default.css')}}" rel="stylesheet">
 
 </head>
+
 @section('body')
 	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 		<!-- Preloader -->
@@ -41,8 +42,8 @@
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#intro">Home</a></li>
-	        <li><a href="#about">About</a></li>
+	        <li class="active"><a href="{{'employee'}}">Home</a></li>
+	        <li><a href="{{'news/json'}}">News JSON</a></li>
 			<li><a href="#service">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
 	        <li class="dropdown">

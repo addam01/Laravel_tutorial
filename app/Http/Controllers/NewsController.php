@@ -16,5 +16,9 @@ namespace App\Http\Controllers;
 			$data['fruits'] = ['Banana','Durian','Passion'];
 			return view('news.list', $data);		
 		}
+		public function getJSON(){
+			$data = array('status' => 'ok','message' => 'succesfully delivered');
+			return response() ->json($data);
+		}
 	}
 ?>

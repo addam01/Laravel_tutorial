@@ -56,6 +56,7 @@ Route::group(['prefix'=>'admin'],function(){
 
 //Routing to controller
 Route::get('/news','NewsController@index');
+Route::get('/news/json','NewsController@getJSON');
 
 /*Using a master blade template
 1. Create a master blade template under views/layouts
