@@ -11,6 +11,10 @@
 			// Using the master Layout
 			return view('employeeChild');		
 		}
+		public function create(){
+			
+		}
+
 	}
 
 ?>

@@ -68,3 +68,4 @@ Route::get('/news/json','NewsController@getJSON');
 */
 Route::get('/blade','MasterLayout@index');
 Route::get('/employee','Employee@show');
+Route::get('/employee/create','Employee@create');

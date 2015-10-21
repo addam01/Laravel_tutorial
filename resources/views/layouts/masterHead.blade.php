@@ -7,8 +7,8 @@
 	    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
 
 	    <!-- Fonts -->
-	    <link href="{{asset('font-awesome/css/font-awesome.mincss')}}" rel="stylesheet" type="text/css">
-		<link href="{{asset('css/animatecss')}}" rel="stylesheet" />
+	    <link href="{{asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+		<link href="{{asset('css/animate.css')}}" rel="stylesheet" />
 	    <!-- Squad theme CSS -->
 	    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 		<link href="{{asset('color/default.css')}}" rel="stylesheet">
