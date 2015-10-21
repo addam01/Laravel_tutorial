@@ -23,7 +23,7 @@
 				</table>
 			</div>
 			<div class="col-md-6">
-				<form method="post" action="{{action('Employee@add')}}">
+				<form method="post" action="">
 					<input type="hidden" name="_token" value="{{csrf_token()}}">
 					<input type="text" name="title">
 					<input type="text" name="description">
