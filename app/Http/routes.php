@@ -15,9 +15,9 @@
 	return view('What view file or output');
 })*/
 /* Example of view file (news.list)*/
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/hello',function(){
 	return "Hello World";
 });
@@ -55,7 +55,7 @@ Route::group(['prefix'=>'admin'],function(){
 });
 
 //Routing to controller
-Route::get('/news','NewsController@index');
+Route::get('/news','NewsController@home');
 Route::get('/news/json','NewsController@getJSON');
 
 /*Using a master blade template
@@ -69,3 +69,10 @@ Route::get('/news/json','NewsController@getJSON');
 Route::get('/blade','MasterLayout@index');
 Route::get('/employee','Employee@show');
 Route::get('/employee/create','Employee@create');
+
+
+Route::get('/',[
+	'as'	=>	'home',
+	'uses'	=>	'PagesController@home'
+	]);
+Route::resource('tasks', 'TaskController');

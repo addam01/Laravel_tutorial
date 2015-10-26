@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
         <title>App Name - @yield('title')</title>
     </head>
     <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{ route('home') }}">Tasks</a>
+            </div>
+            <div class="nav navbar-nav navbar-right">
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('tasks.index') }}">Tasks</a></li>
+            </div> 
+        </div>
+        
+    </nav>
         @section('sidebar')
             This is the master sidebar.
         @show
-sadsads
+
         <div class="container">
             @yield('content')
         </div>

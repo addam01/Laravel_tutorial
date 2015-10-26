@@ -6,7 +6,9 @@ namespace App\Http\Controllers;
 	*/
 	class NewsController extends Controller
 	{
-		
+		public function home(){
+			return view('news.create');
+		}
 		public function index()
 		{
 			//Passing data to View, the view will use the array KEY as a variable name
@@ -19,6 +21,9 @@ namespace App\Http\Controllers;
 		public function getJSON(){
 			$data = array('status' => 'ok','message' => 'succesfully delivered');
 			return response() ->json($data);
+		}
+		public function store(){
+			return "hello";
 		}
 	}
 ?>
