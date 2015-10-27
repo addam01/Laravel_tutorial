@@ -3,10 +3,16 @@ The Route folder handles all page redirects from URL.
 
 Controller is in the app/Http/ folder that handles taking Views from the resource/views/
 
+Step By Step Tutorial by 
+https://www.flynsarmy.com/2015/02/creating-a-basic-todo-application-in-laravel-5-part-1/
+
 http://laravel-recipes.com/recipes/248/knowing-all-the-blade-template-commands
 http://laravel.io/forum/03-06-2014-appending-to-head-tag-in-master-template-from-within-included-one
 http://cheats.jesse-obrien.ca/
 https://scotch.io/tutorials/simple-laravel-layouts-using-blade
+
+Sublime text Laravel plugins
+http://code.tutsplus.com/tutorials/pro-workflow-in-laravel-and-sublime-text--net-30695
 
 
 ## Laravel PHP Framework
