@@ -15,9 +15,9 @@
 	return view('What view file or output');
 })*/
 /* Example of view file (news.list)*/
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 /*Using a master blade template
 1. Create a master blade template under views/layouts
 2. Create a controller for layout under app/Http/Controllers
@@ -77,3 +77,5 @@ Route::get('/employee/create','Employee@create');
 // 	'uses'	=>	'PagesController@home'
 // 	]);
 // Route::resource('tasks', 'TaskController');
+
+Route::get('/projects', 'ProjectController@index');
