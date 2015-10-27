@@ -18,6 +18,14 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+/*Using a master blade template
+1. Create a master blade template under views/layouts
+2. Create a controller for layout under app/Http/Controllers
+3. Route to the controller
+4. Add class in the controller for the child layout 
+5. Create a child layout that uses the master under /view
+6. Refer to child.blade
+*/
 Route::get('/hello',function(){
 	return "Hello World";
 });
@@ -58,21 +66,14 @@ Route::group(['prefix'=>'admin'],function(){
 Route::get('/news','NewsController@home');
 Route::get('/news/json','NewsController@getJSON');
 
-/*Using a master blade template
-1. Create a master blade template under views/layouts
-2. Create a controller for layout under app/Http/Controllers
-3. Route to the controller
-4. Add class in the controller for the child layout 
-5. Create a child layout that uses the master under /view
-6. Refer to child.blade
-*/
+
 Route::get('/blade','MasterLayout@index');
 Route::get('/employee','Employee@show');
 Route::get('/employee/create','Employee@create');
 
 
-Route::get('/',[
-	'as'	=>	'home',
-	'uses'	=>	'PagesController@home'
-	]);
-Route::resource('tasks', 'TaskController');
+// Route::get('/',[
+// 	'as'	=>	'home',
+// 	'uses'	=>	'PagesController@home'
+// 	]);
+// Route::resource('tasks', 'TaskController');
