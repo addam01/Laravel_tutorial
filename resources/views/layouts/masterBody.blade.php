@@ -40,7 +40,7 @@
 	</nav>
     <section>
 		@section('content')
-		das
+		
 		@show	    		
     </section>
 	    
